@@ -1,0 +1,48 @@
+#section-one {
+	background-color: bisque;
+	margin: 10px;
+	padding: 15px;
+
+}
+
+#section-two {
+	background-color: bisque;
+	margin: 10px;
+	padding: 15px;
+
+}
+
+#section-three {
+	background-color: bisque;
+	margin: 10px;
+	padding: 15px;
+}
+
+.card-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	.card {
+		background-color: green;
+		width: 30%;
+		height: 200px;
+		margin: 20px;
+		padding: 15px;
+
+		&__title {
+			margin: 0px;
+			color: black;
+		}
+
+		&__description {
+			margin: 0px;
+			color: black;
+		}
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.card-container {
+		flex-direction: column;
+	}
+}
